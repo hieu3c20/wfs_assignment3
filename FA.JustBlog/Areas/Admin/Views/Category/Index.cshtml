@@ -1,0 +1,121 @@
+@using FA.JustBlog.Core.Models.Enums
+@model IEnumerable<FA.JustBlog.Core.Models.Entities.Category>
+
+@{
+    ViewBag.Title = "Category";
+    Layout = "_Layout";
+    var roles = TempData["Roles"] as IList<string> ?? [];
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Categories</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item">
+            <a class="nav-link" asp-controller="Home" asp-action="Index" asp-area="Admin">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Categories</li>
+    </ol>
+    @* <div class="card mb-4"> *@
+    @*     <div class="card-body"> *@
+    @*     </div> *@
+    @* </div> *@
+    @{
+        if (roles.Contains(Role.Blog_Owner.ToString()) || roles.Contains(Role.Contributor.ToString()))
+        {
+            <a class="btn btn-primary mb-4" asp-area="Admin" asp-controller="Category" asp-action="Create">Add New Category</a>
+        }
+    }
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Categories List
+        </div>
+        <div class="card-body">
+            <table id="datatablesSimple">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Url Slug</th>
+                    <th>Description</th>
+                    @{
+                        if (roles.Contains(Role.Blog_Owner.ToString()))
+                        {
+                            <th>Delete</th>
+                        }
+                    }
+                    @{
+                        if (roles.Contains(Role.Blog_Owner.ToString()) || roles.Contains(Role.Contributor.ToString()))
+                        {
+                            <th>Edit</th>
+                        }
+                    }
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Url Slug</th>
+                    <th>Description</th>
+                    @{
+                        if (roles.Contains(Role.Blog_Owner.ToString()))
+                        {
+                            <th>Delete</th>
+                        }
+                    }
+                    @{
+                        if (roles.Contains(Role.Blog_Owner.ToString()) || roles.Contains(Role.Contributor.ToString()))
+                        {
+                            <th>Edit</th>
+                        }
+                    }
+                </tr>
+                </tfoot>
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.UrlSlug</td>
+                        <td>@item.Description</td>
+                        @{
+                            if (roles.Contains(Role.Blog_Owner.ToString()))
+                            {
+                                <td>
+                                    <a class="btn btn-outline-danger" asp-area="Admin" asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure?')">Delete</a>
+                                </td>
+                            }
+                        }
+                        @{
+                            if (roles.Contains(Role.Blog_Owner.ToString()) || roles.Contains(Role.Contributor.ToString()))
+                            {
+                                <td>
+                                    <a class="btn btn-outline-primary" asp-area="Admin" asp-controller="Category" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                                </td>
+                            }
+                        }
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const errorMessage = "@TempData["ErrorMessage"]";
+            const message = "@TempData["Message"]";
+
+            if (errorMessage) {
+                alert(errorMessage);
+            }
+            if (message) {
+                alert(message);
+            }
+        });
+    </script>
+}

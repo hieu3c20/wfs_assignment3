@@ -1,0 +1,266 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|solutionrelative:fa.justblog\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|solutionrelative:fa.justblog\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA6B9F3C-A9F9-40FB-BEC3-6A95401EFE6D}|FA.JustBlog.Core\\FA.JustBlog.Core.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog.core\\infrastructures\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA6B9F3C-A9F9-40FB-BEC3-6A95401EFE6D}|FA.JustBlog.Core\\FA.JustBlog.Core.csproj|solutionrelative:fa.justblog.core\\infrastructures\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA6B9F3C-A9F9-40FB-BEC3-6A95401EFE6D}|FA.JustBlog.Core\\FA.JustBlog.Core.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog.core\\irepositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA6B9F3C-A9F9-40FB-BEC3-6A95401EFE6D}|FA.JustBlog.Core\\FA.JustBlog.Core.csproj|solutionrelative:fa.justblog.core\\irepositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA6B9F3C-A9F9-40FB-BEC3-6A95401EFE6D}|FA.JustBlog.Core\\FA.JustBlog.Core.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog.core\\irepositories\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA6B9F3C-A9F9-40FB-BEC3-6A95401EFE6D}|FA.JustBlog.Core\\FA.JustBlog.Core.csproj|solutionrelative:fa.justblog.core\\irepositories\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA6B9F3C-A9F9-40FB-BEC3-6A95401EFE6D}|FA.JustBlog.Core\\FA.JustBlog.Core.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog.core\\data\\justblogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA6B9F3C-A9F9-40FB-BEC3-6A95401EFE6D}|FA.JustBlog.Core\\FA.JustBlog.Core.csproj|solutionrelative:fa.justblog.core\\data\\justblogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|solutionrelative:fa.justblog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog\\areas\\admin\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|solutionrelative:fa.justblog\\areas\\admin\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|solutionrelative:fa.justblog\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|solutionrelative:fa.justblog\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog\\areas\\admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|solutionrelative:fa.justblog\\areas\\admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|solutionrelative:fa.justblog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|c:\\users\\asus\\documents\\semester 2\\fajs\\c#\\mvc\\fa.justblog\\fa.justblog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FDA3CD09-FADC-4C9B-A695-8D8755A2D39E}|FA.JustBlog\\FA.JustBlog.csproj|solutionrelative:fa.justblog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog.Core\\Migrations\\20240508150855_RecreateDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FA.JustBlog.Core\\Migrations\\20240508150855_RecreateDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Views\\Post\\Index.cshtml",
+              "RelativeDocumentMoniker": "FA.JustBlog\\Views\\Post\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Views\\Post\\Index.cshtml",
+              "RelativeToolTip": "FA.JustBlog\\Views\\Post\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T15:34:26.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FA.JustBlog\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FA.JustBlog\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T15:34:14.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog.Core\\Infrastructures\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "FA.JustBlog.Core\\Infrastructures\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog.Core\\Infrastructures\\BaseRepository.cs",
+              "RelativeToolTip": "FA.JustBlog.Core\\Infrastructures\\BaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:33:49.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog.Core\\IRepositories\\ICommentRepository.cs",
+              "RelativeDocumentMoniker": "FA.JustBlog.Core\\IRepositories\\ICommentRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog.Core\\IRepositories\\ICommentRepository.cs",
+              "RelativeToolTip": "FA.JustBlog.Core\\IRepositories\\ICommentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:33:35.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog.Core\\IRepositories\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "FA.JustBlog.Core\\IRepositories\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog.Core\\IRepositories\\ICategoryRepository.cs",
+              "RelativeToolTip": "FA.JustBlog.Core\\IRepositories\\ICategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:33:33.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "FA.JustBlog\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FA.JustBlog\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:31:30.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Areas\\Admin\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "FA.JustBlog\\Areas\\Admin\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Areas\\Admin\\Controllers\\PostController.cs",
+              "RelativeToolTip": "FA.JustBlog\\Areas\\Admin\\Controllers\\PostController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:13:44.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "FA.JustBlog\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FA.JustBlog\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:13:40.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "FA.JustBlog\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "FA.JustBlog\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:13:36.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "FA.JustBlog\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "FA.JustBlog\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:13:30.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Program.cs",
+              "RelativeDocumentMoniker": "FA.JustBlog\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\Program.cs",
+              "RelativeToolTip": "FA.JustBlog\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:11:15.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240508150855_RecreateDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog.Core\\Migrations\\20240508150855_RecreateDatabase.cs",
+              "RelativeDocumentMoniker": "FA.JustBlog.Core\\Migrations\\20240508150855_RecreateDatabase.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog.Core\\Migrations\\20240508150855_RecreateDatabase.cs",
+              "RelativeToolTip": "FA.JustBlog.Core\\Migrations\\20240508150855_RecreateDatabase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:08:56.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JustBlogContext.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog.Core\\Data\\JustBlogContext.cs",
+              "RelativeDocumentMoniker": "FA.JustBlog.Core\\Data\\JustBlogContext.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog.Core\\Data\\JustBlogContext.cs",
+              "RelativeToolTip": "FA.JustBlog.Core\\Data\\JustBlogContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T15:07:18.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\appsettings.json",
+              "RelativeDocumentMoniker": "FA.JustBlog\\appsettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\Semester 2\\FAJS\\c#\\mvc\\FA.JustBlog\\FA.JustBlog\\appsettings.json",
+              "RelativeToolTip": "FA.JustBlog\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-08T15:06:21.331Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

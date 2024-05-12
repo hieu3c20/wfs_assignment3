@@ -1,0 +1,142 @@
+@model FA.JustBlog.Areas.Admin.Models.PostCreateModel
+
+@section Styles {
+    <link href="@Url.Content("~/lib/adminlte.min.css")" rel="stylesheet"/>
+}
+
+@{
+    ViewBag.Title = "Edit Post";
+    Layout = "_Layout";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="ms-2">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6 ps-0">
+                    <h1>Edit Post</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item">
+                            <a asp-area="Admin" asp-controller="Post" asp-action="Index">Posts</a>
+                        </li>
+                        <li class="breadcrumb-item active">Edit</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-6">
+                    <!-- general form elements -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Form</h3>
+                        </div>
+                        <!-- form start -->
+                        <form asp-action="Edit" method="post">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label asp-for="Title">Title <span class="text-danger">*</span></label>
+                                    <input asp-for="Title" type="text" class="form-control" placeholder="Enter Title"/>
+                                    <span asp-validation-for="Title" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="UrlSlug">Url Slug <span class="text-danger">*</span></label>
+                                    <input asp-for="UrlSlug" type="text" class="form-control" placeholder="Url Slug" readonly style="cursor: not-allowed"/>
+                                    <span asp-validation-for="UrlSlug" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="ShortDescription">Short Description <span class="text-danger">*</span></label>
+                                    <textarea asp-for="ShortDescription" type="text" class="form-control" placeholder="Write a short description" rows="5"></textarea>
+                                    <span asp-validation-for="ShortDescription" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="PostContent">Post Content <span class="text-danger">*</span></label>
+                                    <div id="editor">@Model.PostContent</div>
+                                    @Html.HiddenFor(model => model.PostContent)
+                                    <span asp-validation-for="PostContent" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="CategoryId">Category <span class="text-danger">*</span></label>
+                                    <select class="form-control form-select form-select-sm" asp-for="CategoryId" asp-items="@ViewBag.Categories">
+                                        <option value="0" selected>Select Category</option>
+                                    </select>
+                                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="TagIds">Tags</label>
+                                    <select multiple multiselect-search="true" class="form-control form-select form-select-sm" asp-for="TagIds" asp-items="@ViewBag.Tags">
+                                    </select>
+                                    @* <span asp-validation-for="CategoryName" class="text-danger"></span> *@
+                                </div>
+                                @Html.HiddenFor(model => model.ViewCount)
+                                @Html.HiddenFor(model => model.RateCount)
+                                @Html.HiddenFor(model => model.TotalRate)
+                            </div>
+                            <div class="card-footer d-flex justify-content-end">
+                                <button class="btn btn-danger me-auto" asp-area="Admin" asp-controller="Post" asp-action="Index">Cancel</button>
+                                @* <button type="submit" class="btn btn-secondary me-2">Save As Draft</button> *@
+                                <input type="submit" class="btn btn-primary" value="Submit" onclick="return confirm('Are you sure?')"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- right column -->
+                <div class="col-md-6">
+                    <!-- general form elements -->
+                    <div class="card card-secondary">
+                        <div class="card-header">
+                            <h3 class="card-title">Preview</h3>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="text-info">
+                                Preview is unavailable currently.
+                            </h4>
+                            @* <div class="masthead bg-secondary"> *@
+                            @*     <div class="container position-relative px-4 px-lg-5"> *@
+                            @*         <div class="row gx-4 gx-lg-5 justify-content-center"> *@
+                            @*             <div class="col-md-10 col-lg-10 col-xl-10"> *@
+                            @*                 <div class="post-heading"> *@
+                            @*                     <h1>@Model.Title</h1> *@
+                            @*                     <p class="post-meta">Posted @Model.PostedOn with rate 5.0 by 100000 view(s)</p> *@
+                            @*                 </div> *@
+                            @*             </div> *@
+                            @*         </div> *@
+                            @*     </div> *@
+                            @* </div> *@
+                            @* <div class="container"> *@
+                            @*     <div class="pb-3"> *@
+                            @*         <article class="mb-4"> *@
+                            @*             <div class="container px-4 px-lg-5"> *@
+                            @*                 <div class="row gx-4 gx-lg-5 justify-content-center"> *@
+                            @*             <div class="col-md-10 col-lg-10 col-xl-10"> *@
+                            @*                         <p>@Model.PostContent</p> *@
+                            @*                     </div> *@
+                            @*                 </div> *@
+                            @*             </div> *@
+                            @*         </article> *@
+                            @*     </div> *@
+                            @* </div> *@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script>
+    <script src="~/js/admin/post/edit.js"></script>
+    <script src="~/lib/multiselect-dropdown.js"></script>
+}

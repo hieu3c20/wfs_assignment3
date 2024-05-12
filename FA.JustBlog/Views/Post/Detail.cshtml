@@ -1,0 +1,20 @@
+@model FA.JustBlog.Core.Models.Entities.Post
+
+@{
+    ViewData["Title"] = "Detail";
+    ViewData["Background"] = "post-bg";
+    ViewData["PostTitle"] = @Model.Title;
+    ViewData["ShortDescription"] = @Model.ShortDescription;
+    ViewData["PostMeta"] = $"Posted {@Model.PostedOn} with rate {@Model.Rate.ToString("0.0")} by {@Model.ViewCount} view(s)";
+    Layout = "_Layout";
+}
+
+<article class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div>@Html.Raw(@Model.PostContent)</div>
+            </div>
+        </div>
+    </div>
+</article>

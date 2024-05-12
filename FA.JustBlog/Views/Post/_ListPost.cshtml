@@ -1,0 +1,15 @@
+@model IEnumerable<FA.JustBlog.Core.Models.Entities.Post>
+
+@foreach (var post in Model)
+{
+    <div class="post-preview partial-body">
+        <a asp-area="" asp-controller="Post" asp-action="Detail" asp-route-year="@post.PostedOn.Year" asp-route-month="@post.PostedOn.Month" asp-route-title="@post.UrlSlug">
+            <h5 class="fw-normal text-truncate">@post.Title</h5>
+        </a>
+        @* <h5 class="post-subtitle fs-6 text-truncate">@post.ShortDescription</h5> *@
+        <p class="post-meta fs-6 mb-0">
+            @post.PostedOn.ToString("dd/MM/yyyy") - @post.Rate.ToString("0.0")★ - @post.ViewCount view(s)
+        </p>
+    </div>
+    <hr class="my-2"/>
+}

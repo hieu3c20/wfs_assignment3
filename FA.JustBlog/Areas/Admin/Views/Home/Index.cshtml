@@ -1,0 +1,104 @@
+@model FA.JustBlog.Areas.Admin.Models.HomeViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "_Layout";
+    
+    var years = Html.Raw(Json.Serialize(Model.Years));
+    var totalPostsOverYears = Html.Raw(Json.Serialize(Model.TotalPostsOverYears));
+    var categoryNames = Html.Raw(Json.Serialize(Model.CategoryNames));
+    var totalPostsPerCategories = Html.Raw(Json.Serialize(Model.TotalPostsPerCategories));
+}
+
+@Html.Hidden("years", years)
+@Html.Hidden("totalPostsOverYears", totalPostsOverYears)
+@Html.Hidden("categoryNames", categoryNames)
+@Html.Hidden("totalPostsPerCategories", totalPostsPerCategories)
+<div class="container-fluid px-4">
+<h1 class="mt-4">Dashboard</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Dashboard</li>
+</ol>
+<div class="row">
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-primary text-white mb-4">
+            <div class="w-100 card-body d-flex align-items-center">
+                <div class="">Total Posts </div>
+                <div class="ms-auto">@Model.TotalPosts </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" asp-area="Admin" asp-controller="Post" asp-action="Index">View Details</a>
+                <div class="small text-white">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-warning text-white mb-4">
+            <div class="w-100 card-body d-flex align-items-center">
+                <div class="">Total Categories </div>
+                <div class="ms-auto">@Model.TotalCategories </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" asp-area="Admin" asp-controller="Category" asp-action="Index">View Details</a>
+                <div class="small text-white">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-success text-white mb-4">
+            <div class="w-100 card-body d-flex align-items-center">
+                <div class="">Total Tags </div>
+                <div class="ms-auto">@Model.TotalTags </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" asp-area="Admin" asp-controller="Tag" asp-action="Index">View Details</a>
+                <div class="small text-white">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-danger text-white mb-4">
+            <div class="w-100 card-body d-flex align-items-center">
+                <div class="">Total Comments </div>
+                <div class="ms-auto">@Model.TotalComments </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" asp-area="Admin" asp-controller="Comment" asp-action="Index">View Details</a>
+                <div class="small text-white">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-chart-area me-1"></i>
+                Total Posts Over Years
+            </div>
+            <div class="card-body">
+                <canvas id="myAreaChart" width="100%" height="60"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-chart-bar me-1"></i>
+                Total Posts By Categories
+            </div>
+            <div class="card-body">
+                <canvas id="myPieChart" width="100%" height="60"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

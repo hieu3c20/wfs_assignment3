@@ -1,0 +1,16 @@
+@model FA.JustBlog.Core.Models.Entities.Post
+
+<!-- Post preview-->
+<div class="post-preview">
+    <a asp-area="" asp-controller="Post" asp-action="Detail" asp-route-year="@Model.PostedOn.Year" asp-route-month="@Model.PostedOn.Month" asp-route-title="@Model.UrlSlug">
+        <h2 class="post-title">@Model.Title</h2>
+    </a>
+    <p class="post-meta mb-1">
+        Posted on @Model.PostedOn.ToString("dd/MM/yyyy") with @Model.Rate.ToString("0.0")★ by @Model.ViewCount view(s)
+    </p>
+    @Html.CategoryLink(@Model.Category.Name)
+    @Html.TagLink(@Model.PostTagMaps.Select(ptm => ptm.Tag))
+    <h5 class="post-subtitle">@Model.ShortDescription</h5>
+</div>
+<!-- Divider-->
+<hr class="my-4"/>

@@ -1,0 +1,10 @@
+@model IEnumerable<FA.JustBlog.Core.Models.Entities.Tag>
+
+<div class="">
+    @foreach (var item in Model)
+    {
+        <div class="border border-2 text-center text-decoration-underline me-2 d-inline-block px-2 fs-6">
+            #@item.Name
+        </div>
+    }
+</div>

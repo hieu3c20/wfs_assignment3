@@ -1,0 +1,95 @@
+@model PostViewModel
+
+@{
+    ViewData["Title"] = "Posts";
+    ViewData["Background"] = "home-bg";
+    Layout = "_Layout";
+}
+
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+    <div class="row">
+        <div class="col-lg-8 col-md-12 mx-auto">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                @* <div class="col-md-10 col-lg-8 col-xl-7"> *@
+                <div>
+                    <div class="d-flex justify-content-between mb-4">
+                        <h1>All @ViewBag.Category Posts!</h1>
+                    </div>
+                    <hr class="my-4"/>
+                    @foreach (var item in Model.Posts)
+                    {
+                        <div>
+                            @await Html.PartialAsync("PostItem", item)
+                        </div>
+                    }
+                    <!-- Pager-->
+                    <div class="d-flex justify-content-between mb-4">
+                        @{
+                            if (Model.Page > 1)
+                            {
+                                if (Model.MostViewedPosts != null)
+                                {
+                                    <a class="btn btn-primary text-uppercase me-auto" asp-controller="Post" asp-action="Index" asp-route-page="@(Model.Page - 1)">← Newer Posts</a>
+                                }
+                                else
+                                {
+                                    <a class="btn btn-primary text-uppercase me-auto" asp-controller="Post" asp-action="PostsByCategory" asp-route-page="@(Model.Page - 1)">← Newer Posts</a>
+                                }
+                            }
+                        }
+                        @{
+                            if (Model.Page < Model.TotalPage)
+                            {
+                                if (Model.MostViewedPosts != null)
+                                {
+                                    <a class="btn btn-primary text-uppercase ms-auto" asp-controller="Post" asp-action="Index" asp-route-page="@(Model.Page + 1)">Older Posts →</a>
+                                }
+                                else
+                                {
+                                    <a class="btn btn-primary text-uppercase ms-auto" asp-controller="Post" asp-action="PostsByCategory" asp-route-page="@(Model.Page + 1)">Older Posts →</a>
+                                }
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        @{
+            if (Model.MostViewedPosts != null)
+            {
+                <div class="col-lg-4 col-md-12 mx-auto d-flex flex-column gap-5">
+                    @{
+                        if (Model.MostViewedPosts != null)
+                        {
+                            @await Html.PartialAsync("_PartialAboutCard")
+                            <div class="post-thread border-start ps-4">
+                                <h5 class="partial-head">Most Viewed Posts:</h5>
+                                <hr class="my-2"/>
+                                @await Html.PartialAsync("_ListPost", Model.MostViewedPosts)
+                            </div>
+                        }
+
+                        if (Model.LatestPosts != null)
+                        {
+                            <div class="post-thread border-start ps-4">
+                                <h5 class="partial-head">Latest Posts:</h5>
+                                <hr class="my-2"/>
+                                @await Html.PartialAsync("_ListPost", Model.LatestPosts)
+                            </div>
+                        }
+
+                        if (Model.PopularTags != null)
+                        {
+                            <div class="post-thread ps-4 mt-auto mb-4">
+                                <h5 class="partial-head">Popular Tags:</h5>
+                                <hr class="my-2"/>
+                                @await Html.PartialAsync("_PopularTags", Model.PopularTags)
+                            </div>
+                        }
+                    }
+                </div>
+            }
+        }
+    </div>
+</div>

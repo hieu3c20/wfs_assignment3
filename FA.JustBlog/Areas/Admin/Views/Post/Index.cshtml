@@ -1,0 +1,155 @@
+@using FA.JustBlog.Core.Models.Enums
+@model IEnumerable<FA.JustBlog.Core.Models.Entities.Post>
+
+@{
+    ViewBag.Title = "Post";
+    Layout = "_Layout";
+    var roles = TempData["Roles"] as IList<string> ?? [];
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Posts</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item">
+            <a class="nav-link" asp-controller="Home" asp-action="Index" asp-area="Admin">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Posts</li>
+    </ol>
+    @* <div class="card mb-4"> *@
+    @*     <div class="card-body"> *@
+    @*     </div> *@
+    @* </div> *@
+    @{
+        if (roles.Contains(Role.Blog_Owner.ToString()) || roles.Contains(Role.Contributor.ToString()))
+        {
+            <a class="btn btn-primary mb-4" asp-area="Admin" asp-controller="Post" asp-action="Create">Add New Post</a>
+        }
+    }
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Posts List
+        </div>
+        <div class="card-body">
+            <table id="datatablesSimple">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Url Slug</th>
+                    <th>Posted On</th>
+                    <th>View Count</th>
+                    <th>Rate</th>
+                    <th>Category</th>
+                    <th>Publish</th>
+                    @{
+                        if (roles.Contains(Role.Blog_Owner.ToString()))
+                        {
+                            <th>Delete</th>
+                        }
+                    }
+                    @{
+                        if (roles.Contains(Role.Blog_Owner.ToString()) || roles.Contains(Role.Contributor.ToString()))
+                        {
+                            <th>Edit</th>
+                        }
+                    }
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Url Slug</th>
+                    <th>Posted On</th>
+                    <th>View Count</th>
+                    <th>Rate</th>
+                    <th>Category</th>
+                    <th>Publish</th>
+                    @{
+                        if (roles.Contains(Role.Blog_Owner.ToString()))
+                        {
+                            <th>Delete</th>
+                        }
+                    }
+                    @{
+                        if (roles.Contains(Role.Blog_Owner.ToString()) || roles.Contains(Role.Contributor.ToString()))
+                        {
+                            <th>Edit</th>
+                        }
+                    }
+                </tr>
+                </tfoot>
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Title</td>
+                        <td>@item.UrlSlug</td>
+                        <td>@item.PostedOn.ToString("dd/MM/yyyy hh:mm")</td>
+                        <td>@item.ViewCount</td>
+                        <td>@item.Rate.ToString("0.0")</td>
+                        <td>@item.Category.Name</td>
+                        <td class="text-center align-middle">
+                            @{
+                                if (roles.Contains(Role.Blog_Owner.ToString()))
+                                {
+                                    <div class="form-check form-switch">
+                                        <form asp-area="Admin" asp-controller="Post" asp-action="Publish" asp-route-id="@item.Id" method="post">
+                                            <input class="form-check-input" type="checkbox" style="cursor:pointer;" checked="@item.Published" onchange="this.form.submit()">
+                                        </form>
+                                    </div>
+                                }
+                                else
+                                {
+                                    if (@item.Published)
+                                    {
+                                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px" aria-hidden="true"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fas fa-times-circle ratio-1x1 d-inline-block" style="color: indianred; height: 25px"></i>
+                                    }
+                                }
+                            }
+                        </td>
+                        @{
+                            if (roles.Contains(Role.Blog_Owner.ToString()))
+                            {
+                                <td>
+                                    <a class="btn btn-outline-danger" asp-area="Admin" asp-controller="Post" asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure?')">Delete</a>
+                                </td>
+                            }
+                        }
+                        @{
+                            if (roles.Contains(Role.Blog_Owner.ToString()) || roles.Contains(Role.Contributor.ToString()))
+                            {
+                                <td>
+                                    <a class="btn btn-outline-primary" asp-area="Admin" asp-controller="Post" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                                </td>
+                            }
+                        }
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const errorMessage = "@TempData["ErrorMessage"]";
+            const message = "@TempData["Message"]";
+
+            if (errorMessage) {
+                alert(errorMessage);
+            }
+            if (message) {
+                alert(message);
+            }
+        });
+    </script>
+}

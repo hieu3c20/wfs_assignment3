@@ -1,0 +1,408 @@
+@{
+    ViewBag.Title = "Roles";
+    Layout = "_Layout";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Roles</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item">
+            <a class="nav-link" asp-controller="Home" asp-action="Index" asp-area="Admin">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Roles</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Roles List
+        </div>
+        <div class="card-body">
+            <table id="datatablesSimple">
+                <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Action</th>
+                    <th>User</th>
+                    <th>Contributor</th>
+                    <th>Blog Owner</th>
+
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <th>Model</th>
+                    <th>Action</th>
+                    <th>User</th>
+                    <th>Contributor</th>
+                    <th>Blog Owner</th>
+
+                </tr>
+                </tfoot>
+                <tbody>
+                
+                @* POST *@
+                <tr>
+                    <td>Post</td>
+                    <td>Create</td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Update</td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Detail</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Index</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Delete</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Publish</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Un-publish</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+
+                @* CATEGORY *@
+                <tr>
+                    <td>Category</td>
+                    <td>Create</td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Update</td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Detail</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Index</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Delete</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                
+                @* TAG *@
+                <tr>
+                    <td>Tag</td>
+                    <td>Create</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Update</td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Detail</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Index</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Delete</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                
+                @* COMMENT *@
+                <tr>
+                    <td>Comment</td>
+                    <td>Create</td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Update</td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Detail</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Index</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Delete</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                
+                @* USER *@
+                <tr>
+                    <td>User</td>
+                    <td>Create</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Update</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Detail</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Index</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Delete</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                
+                @* ROLE *@
+                <tr>
+                    <td>Role</td>
+                    <td>Create</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Update</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Detail</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Index</td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Delete</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="fa fa-check-circle ratio-1x1 d-inline-block" style="color: lawngreen; height: 25px"></i>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
